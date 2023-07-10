@@ -1,19 +1,33 @@
 function allView(){
     $(".mobile").removeClass('visually-hidden');
     $(".web").removeClass('visually-hidden');
+    $(".program").removeClass('visually-hidden');
+
     btnBackground(1);
 }
 
 function mobileView(){
     $(".mobile").removeClass('visually-hidden');
     $(".web").addClass('visually-hidden');
+    $(".program").addClass('visually-hidden');
+
     btnBackground(2);
 }
 
 function webView(){
     $(".mobile").addClass('visually-hidden');
     $(".web").removeClass('visually-hidden');
+    $(".program").addClass('visually-hidden');
+
     btnBackground(3);
+}
+
+function programView(){
+    $(".mobile").addClass('visually-hidden');
+    $(".web").addClass('visually-hidden');
+    $(".program").removeClass('visually-hidden');
+
+    btnBackground(4);
 }
 
 function btnBackground(val){
@@ -21,14 +35,26 @@ function btnBackground(val){
         $("#btnAll").addClass('btn-dark');
         $("#btnMobile").removeClass('btn-dark');
         $("#btnWeb").removeClass('btn-dark');
+        $("#btnProgram").removeClass('btn-dark');
+
     }else if(val == 2){
         $("#btnAll").removeClass('btn-dark');
         $("#btnMobile").addClass('btn-dark');
-        $("#btnWeb").removeClass('btn-dark');        
+        $("#btnWeb").removeClass('btn-dark'); 
+        $("#btnProgram").removeClass('btn-dark');
+       
     }else if(val == 3){
         $("#btnAll").removeClass('btn-dark');
         $("#btnMobile").removeClass('btn-dark');
         $("#btnWeb").addClass('btn-dark');
+        $("#btnProgram").removeClass('btn-dark');
+
+    }else if(val == 4){
+        $("#btnAll").removeClass('btn-dark');
+        $("#btnMobile").removeClass('btn-dark');
+        $("#btnWeb").removeClass('btn-dark');
+        $("#btnProgram").addClass('btn-dark');
+
     }
 }
 

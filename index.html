@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -90,12 +91,8 @@
                         <div class="">
                             <div class="text-center my-5">
                                 <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                                <p class="lead fw-light mb-2">I'm Surabhi Jagadeesh, a passionate software engineer.</p>
-                                <p class="text-muted mb-1" style="font-size: 1.2rem;">I am currently pursuing Masters in Computer Science at University of North Carolina at Charlotte.</p>       
-                                <p class="text-muted mb-1" style="font-size: 1.2rem;">Proficient in C/C++, Java, Android and Web Development. Experienced as a Research Assistant and Full Stack Web Developer.</p>
-                                <p class="text-muted mb-1" style="font-size: 1.2rem;">As a Research Assistant, I am currently involved in developing a mobile application that measures the Blood Alcohol Concentration (BAC) of the user. This application not only provides real-time BAC calculations but also offers guidance on safe alcohol consumption and promotes a healthy lifestyle.</p>
-                                <p class="text-muted mb-1" style="font-size: 1.2rem;">Additionally, I have worked as a Full Stack Web Developer, successfully delivering projects ranging from inventory management systems to attendance management applications.</p>
-                                <p class="text-muted mb-1" style="font-size: 1.2rem;">Passionate about sharing knowledge on software development, mobile applications, and web technologies.
+                                <p class="lead fw-light mb-2"> </p>
+                                <p class="text-muted mb-1" style="font-size: 1.2rem;"> I'm Surabhi Jagadeesh, a proficient software developer with a specialization in Android application and full-stack development. My extensive skills in Kotlin, Java, and Android Studio enable me to design and develop highly resilient and scalable Android applications. In addition, I possess a strong background in front-end technologies like HTML, CSS, and JavaScript, and I am proficient in frameworks such as NodeJS.I also have a 1 year work experience as a salesforce developer in NTT Data. With a proven track record of collaborating effectively in cross-functional teams, I consistently deliver top-notch solutions within stipulated timelines. I am committed to continuous learning and staying abreast of emerging industry trends to contribute to challenging projects and drive positive outcomes. I welcome the opportunity to connect and explore new skills.</p>       
                                 </p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
                                     <a class="text-gradient" target="_blank" href="https://www.linkedin.com/in/surabhi-jagadeesh-b913471b8/"><i class="bi bi-linkedin"></i></a>
@@ -420,27 +417,44 @@
                             <button class="btn btn-light border-dark btn-dark" id="btnAll" onclick="allView()">ALL</button>
                             <button class="btn btn-light border-dark ms-2" id="btnMobile" onclick="mobileView()">MOBILE APP</button>
                             <button class="btn btn-light border-dark ms-2" id="btnWeb" onclick="webView()">WEB PROJECT</button>
+                            <button class="btn btn-light border-dark ms-2" id="btnProgram" onclick="programView()">PROGRAMMING PROJECT</button>
                             <a class="btn btn-light border-dark ms-2" id="btnWeb" onclick="webView()" href="https://github.com/Surabhijj?tab=repositories">Load More &nbsp <i class="bi-github"></i></a>
 
                         </div>
-                        <!-- Project Card 1-->
-                        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mobile">
-                            <a href="https://github.com/Surabhijj/messaging-app" class="link-unstyled">
+                        
+                         <!-- Project Card 1 -->
+                         <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mobile">
+                            <a href="https://github.com/Surabhijj/weather-app" class="link-unstyled">
                                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 hover-effect">
                                     <div class="card-body p-3">
                                         <div class="d-flex align-items-center">
                                             <div class="p-0">
-                                                <h2 class="fw-bolder">Messaging App</h2>
-                                                <p>Developed a messaging app ensuring seamless, secure communication. Google Authentication protects accounts and sensitive data. Google Firestore provides uninterrupted service, keeping chats accessible. Communicate confidently, knowing privacy is safeguarded.</p>
+                                                <h2 class="fw-bolder">Weather App</h2>
+                                                <p>The Weather App is an Android application that displays the current weather and 5-day forecast for various cities. It utilizes the Weather API for retrieving weather data. The app features city selection, an easy-to-read UI, and uses OkHttp for API calls and JSON parsing. Additionally, it incorporates the Picasso library for loading weather icons dynamically.</p>
                                             </div>
-                                            <img class="img-fluid" src="assets/project-icon/message.png" alt="..." />
+                                            <img class="img-fluid" src="assets/project-icon/weather.png" alt="..." />
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        
                         <!-- Project Card 2 -->
+                        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mobile">
+                            <a href="https://github.com/Surabhijj/trivia-application" class="link-unstyled">
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 hover-effect">
+                                    <div class="card-body p-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-0">
+                                                <h2 class="fw-bolder">Trivia Game Application</h2>
+                                                <p>The Trivia Game Application is an Android app that allows users to play a trivia game. The JSON-formatted trivia questions are retrieved using HTTP connections and API queries. Using OkHttp, the app can parse JSON input and make API calls. In order to dynamically load graphics during gameplay, it also incorporates the Picasso library.</p>
+                                            </div>
+                                            <img class="img-fluid" src="assets/project-icon/trivia.png" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Project Card 3 -->
                         <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mobile">
                             <a href="https://github.com/Surabhijj/Trip-Manager" class="link-unstyled">
                                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 hover-effect">
@@ -457,39 +471,25 @@
                             </a>
                         </div>
 
-                         <!-- Project Card 3 -->
-                         <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mobile">
-                            <a href="https://github.com/Surabhijj/weather-app" class="link-unstyled">
+                         
+                        
+                        <!-- Project Card 4-->
+                        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mobile">
+                            <a href="https://github.com/Surabhijj/messaging-app" class="link-unstyled">
                                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 hover-effect">
                                     <div class="card-body p-3">
                                         <div class="d-flex align-items-center">
                                             <div class="p-0">
-                                                <h2 class="fw-bolder">Weather App</h2>
-                                                <p>The Weather App is an Android application that displays the current weather and 5-day forecast for various cities. It utilizes the Weather API for retrieving weather data. The app features city selection, an easy-to-read UI, and uses OkHttp for API calls and JSON parsing. Additionally, it incorporates the Picasso library for loading weather icons dynamically.</p>
+                                                <h2 class="fw-bolder">Messaging App</h2>
+                                                <p>Developed a messaging app ensuring seamless, secure communication. Google Authentication protects accounts and sensitive data. Google Firestore provides uninterrupted service, keeping chats accessible. Communicate confidently, knowing privacy is safeguarded.</p>
                                             </div>
-                                            <img class="img-fluid" src="assets/project-icon/weather.png" alt="..." />
+                                            <img class="img-fluid" src="assets/project-icon/message.png" alt="..." />
                                         </div>
                                     </div>
                                 </div>
                             </a>
-                        </div>
-
-                         <!-- Project Card 4 -->
-                         <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 mobile">
-                            <a href="https://github.com/Surabhijj/trivia-application" class="link-unstyled">
-                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 hover-effect">
-                                    <div class="card-body p-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="p-0">
-                                                <h2 class="fw-bolder">Trivia Game Application</h2>
-                                                <p>The Trivia Game Application is an Android app that allows users to play a trivia game. The JSON-formatted trivia questions are retrieved using HTTP connections and API queries. Using OkHttp, the app can parse JSON input and make API calls. In order to dynamically load graphics during gameplay, it also incorporates the Picasso library.</p>
-                                            </div>
-                                            <img class="img-fluid" src="assets/project-icon/trivia.png" alt="..." />
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        </div>      
+                         
 
                         <!-- Project Card 5 -->
                         <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 web">
@@ -526,7 +526,7 @@
                         </div>
                         <!-- Project Card 7 -->
                         <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 web">
-                            <a href="https://github.com/Surabhijj/Jewelry-Trading-Website" class="link-unstyled">
+                            <a href="https://github.com/Surabhijj/Fintrack" class="link-unstyled">
                                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 hover-effect">
                                     <div class="card-body p-3">
                                         <div class="d-flex align-items-center">
@@ -537,6 +537,22 @@
                                                   user-friendly interface to track their spending habits and make informed financial decisions bulit using Node.js and Express.js, it integrates MongoDB fro data Storage.</p>
                                             </div>
                                             <img class="img-fluid" width="300px" src="assets/project-icon/Fintrack.png" alt="..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>      
+                        <!-- Project Card 8 -->
+                        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 program">
+                            <a href="https://github.com/Surabhijj" class="link-unstyled">
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 hover-effect">
+                                    <div class="card-body p-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-0">
+                                                <h2 class="fw-bolder">8 puzzle problem</h2>
+                                                <p> The strategy aims to utilise an A *search method to resolve an 8-puzzle. Recursive algorithms like A* are executed repeatedly until a solution is found. Taking into account the manhattan heuristic and the misplaced heuristic, two heuristic aspects.The program combines the start state and the goal state and applies the two methods to find the best way to go to the goal state.</p>
+                                            </div>
+                                            <img class="img-fluid" width="300px" src="assets/project-icon/8-puzzle.png" alt="..." />
                                         </div>
                                     </div>
                                 </div>
@@ -555,9 +571,9 @@
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0">Surabhi Jagadeesh &copy; 2023</div></div>
                     <div class="col-auto">
-                        <a class="text-gradient" target="_blank" href="https://www.linkedin.com/in/deepfuriya/"><i class="bi bi-linkedin"></i></a>
+                        <a class="text-gradient" target="_blank" href="https://www.linkedin.com/in/surabhi-jagadeesh-b913471b8/"><i class="bi bi-linkedin"></i></a>
                         <span class="mx-1">&middot;</span>
-                        <a class="text-gradient" target="_blank" href="https://github.com/deepfuriya"><i class="bi bi-github"></i></a>
+                        <a class="text-gradient" target="_blank" href="https://github.com/surabhijj"><i class="bi bi-github"></i></a>
                         <span class="mx-1">&middot;</span>
                         <a class="text-gradient" href="mailto:dfuriya@uncc.edu"><i class="bi bi-envelope-fill"></i></a>
                     </div>
@@ -566,7 +582,8 @@
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/scripts.js"></script>ˀ
     </body>
 </html>
